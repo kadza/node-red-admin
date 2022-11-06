@@ -5,5 +5,4 @@ COPY docker-entrypoint.sh /bin/docker-entrypoint.sh
 RUN chmod +x /bin/docker-entrypoint.sh
 USER node-red
 COPY settings.js /tmp/settings.js
-COPY .npmrc /tmp/.npmrc
 ENTRYPOINT ["/bin/docker-entrypoint.sh"]
