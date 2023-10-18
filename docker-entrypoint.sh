@@ -11,8 +11,9 @@ cp /tmp/settings.js /data/settings.js
 
 # it isn't fully secure but the package is publicly available
 # https://www.alexandraulsh.com/2018/06/25/docker-npmrc-security/
+rm -f /data/.npmrc
 touch /data/.npmrc
-echo "//npm.pkg.github.com/:_authToken=$NPM_TOKEN" >> /data/.npmrc
-echo "@kadza:registry=https://npm.pkg.github.com" >> /data/.npmrc
+echo "//npm.pkg.github.com/:_authToken=$NPM_TOKEN" >>/data/.npmrc
+echo "@kadza:registry=https://npm.pkg.github.com" >>/data/.npmrc
 
 npm --no-update-notifier --no-fund start --cache /data/.npm -- --userDir /data
