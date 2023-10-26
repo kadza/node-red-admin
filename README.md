@@ -14,6 +14,9 @@ $ ./deploy.sh
 
 Add plugin in node-red admin
 
+It needs to be investigated. The below files have older version.
+What I did is, copy package.json. Update deps in package.json manually. Copy package-lock.json and change project-version manually
+
 Copy package.json:
 
 ```
