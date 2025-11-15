@@ -1,4 +1,4 @@
-FROM nodered/node-red:3.1.0-18-minimal
+FROM nodered/node-red:4.1.1-22-minimal
 
 USER 0
 COPY docker-entrypoint.sh /bin/docker-entrypoint.sh
